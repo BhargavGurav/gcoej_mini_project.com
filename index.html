@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	
+	<title>GCOEJ</title>
+</head>
+<body>	
+		<!-- navbar-start -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		  <div class="container-fluid ">
+		    <a class="navbar-brand ms-3" href="#">GCOEJ</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="about.html">About</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Branches
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="#computer">Computer Engineering</a></li>
+		            <li><a class="dropdown-item" href="#civil">Civil Engineering</a></li>
+		            <li><a class="dropdown-item" href="#electrical">Electrical Engineering</a></li>
+		            <li><a class="dropdown-item" href="#mechanical">Mechanical Engineering</a></li>
+		            <li><a class="dropdown-item" href="#instru">Instrumentation Engineering</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+		        </li>
+                
+                <li class="nav-item">
+		        <button class="btn btn-outline-success sign"  onclick="log_in()">Sign in</button>
+				<button class="btn btn-outline-light sign"  onclick="sign_in()">Sign up</button>
+				<button class="btn btn-outline-light " id="user" ></button>
+				</li>
+		      </ul>
+		      
+		    </div>
+		  </div>
+	</nav>
+	<!-- navbar-end	 -->
+
+<div class="page " id="home">
+	<div class="container-fluid">
+		<div class="row justify-content-around">
+			<div class="col-md-12 text-center mt-3">
+				<h1 >Welcome To our Site</h1>
+				<span id='registerationMessage' ></span>
+			</div>
+			
+			<div class="col-md-4 rounded" id="log-in" >
+				<form class="form ">
+					<div class="form-group">
+						<label class="form-label">Username</label>
+						<input type="text" name="" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Password</label>
+						<input type="password" name="" class="form-control">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary">Log-in</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4 rounded" id="sign-up">
+				<form class="form ">
+					<div class="form-group">
+						<label class="form-label">Name</label>
+						<input type="text" name="" class="form-control" id='name' placeholder="First   Middle   Last">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Email-id</label>
+						<input type="email" name="" class="form-control" placeholder="Email-id">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Mobile No.</label>
+						<input type="text" name="" class="form-control" placeholder="Mobile number...">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Password</label>
+						<input type="password" name="" class="form-control" placeholder="password">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary" onclick="completion()">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- computer -->
+<div class="container-fluid my-2" id="computer">
+	<div class="row m-2">
+		<div class="col-lg-12 text-center p-5 mt-5">
+			<h2>Technologies That are tought in Our Syllabus</h2>
+		</div>
+	</div>
+	<div class="row m-5 justify-content-around align-middle">
+		<div class="col-lg-3 m-4  box rounded"  data-aos="fade-left" data-aos-delay="400">
+			<h5>HTML</h5>
+			<p>As we all know the emerging market of Digitalization. Everyone wants to set their business online.
+			   for this purpose they requrie to build online website and to provide them best fascilities we teach
+			    students html. We teach them from scratch and make them perfect so that future market requirment for full stack developer is fulfilled.</p>
+		</div>
+		<div class="col-lg-3 m-4 p-2 box rounded"  data-aos="fade-up" data-aos-delay="600">
+			<h5>CSS</h5>
+			<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript</p>
+		</div>
+		<div class="col-lg-3 m-4 p-2 box rounded"  data-aos="fade-right" data-aos-delay="800">
+			<h5>Javascript</h5>
+			<p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.</p>
+		</div>
+		<div class="col-lg-3 m-4 p-2 box rounded"  data-aos="fade-left" data-aos-delay="1000">
+			<h5>Programming Languages</h5>
+			<p>A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.</p>
+		</div>
+		<div class="col-lg-3 m-4 p-2 box rounded"  data-aos="fade-down" data-aos-delay="1200">
+			<h5>Cloud Computing</h5>
+			<p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each location being a data center.</p>
+		</div>
+		<div class="col-lg-3 m-4 p-2 box rounded"  data-aos="fade-right" data-aos-delay="1400">
+			<h5>Cyber security</h5>
+			<p>Computer security, cybersecurity, or information technology security is the protection of computer systems and networks from information disclosure, theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.</p>
+		</div>
+	</div>
+	
+	
+</div>
+<!-- computer-end -->
+
+<!-- civil start -->
+<div class="container-fluid my-2" id="civil">
+	<div class="row justify-content-around align-middle">
+		<div class="col-md-12 text-center p-3 mt-5">
+			<h2>Civil Engineering</h2>
+		</div>
+		<div class="col-md-8 text-center text-justify box m-4 p-3 rounded-3" data-aos="fade-down" data-aos-delay="400">
+			<p>Civil engineering is arguably the oldest engineering discipline. It deals with the built environment and can be dated to the first time someone placed a roof over his or her head or laid a tree trunk across a river to make it easier to get across.
+
+			The built environment encompasses much of what defines modern civilization. Buildings and bridges are often the first constructions that come to mind, as they are the most conspicuous creations of structural engineering, one of civil engineering's major sub-disciplines. Roads, railroads, subway systems, and airports are designed by transportation engineers, another category of civil engineering. And then there are the less visible creations of civil engineers. Every time you open a water faucet, you expect water to come out, without thinking that civil engineers made it possible. New York City has one of the world’s most impressive water supply systems, receiving billions of gallons of high-quality water from the Catskills over one hundred miles away. Similarly, not many people seem to worry about what happens to the water after it has served its purposes. The old civil engineering discipline of sanitary engineering has evolved into modern environmental engineering of such significance that most academic departments have changed their names to civil and environmental engineering.
+
+			These few examples illustrate that civil engineers do a lot more than design buildings and bridges. They can be found in the aerospace industry, designing jetliners and space stations; in the automotive industry, perfecting the load-carrying capacity of a chassis and improving the crashworthiness of bumpers and doors; and they can be found in the ship building industry, the power industry, and many other industries wherever constructed facilities are involved. And they plan and oversee the construction of these facilities as construction managers.
+
+			Civil engineering is an exciting profession because at the end of the day you can see the results of your work, whether this is a completed bridge, a high-rise building, a subway station, or a hydroelectric dam.</p>
+		</div>
+	</div>
+</div>
+<!-- civil end -->
+
+<!-- electrical start -->
+<div class="container-fluid my-2" id="electrical">
+	<div class="row justify-content-around">
+		<div class="col-md-12 text-center p-3 mt-5">
+			<h2>Electrical Engineering</h2>
+		</div>
+		<div class="col-md-8 text-center text-justify box p-3 my-5 rounded-3" data-aos="fade-down" data-aos-delay="400">
+			<p>Electrical engineering is one of the newer branches of engineering, and dates back to the late 19th century. It is the branch of engineering that deals with the technology of electricity. Electrical engineers work on a wide range of components, devices and systems, from tiny microchips to huge power station generators.
+
+			Early experiments with electricity included primitive batteries and static charges. However, the actual design, construction and manufacturing of useful devices and systems began with the implementation of Michael Faraday's Law of Induction, which essentially states that the voltage in a circuit is proportional to the rate of change in the magnetic field through the circuit. This law applies to the basic principles of the electric generator, the electric motor and the transformer. The advent of the modern age is marked by the introduction of electricity to homes, businesses and industry, all of which were made possible by electrical engineers. 
+
+			Some of the most prominent pioneers in electrical engineering include Thomas Edison (electric light bulb), George Westinghouse (alternating current), Nikola Tesla (induction motor), Guglielmo Marconi (radio) and Philo T. Farnsworth (television). These innovators turned ideas and concepts about electricity into practical devices and systems that ushered in the modern age. </p>
+		</div>
+	</div>
+</div>
+<!-- electrical end -->
+
+<!-- mechanical start -->
+<div class="container-fluid my-2" id="mechanical">
+	<div class="row justify-content-around align-middle">
+		<div class="col-md-12 text-center p-3  mt-5">
+			<h2>Mechanical Engineering</h2>
+		</div>
+		<div class="col-md-8 text-center text-justify box p-3 my-5 rounded-3" data-aos="fade-down" data-aos-delay="400">
+			<p>Technically, mechanical engineering is the application of the principles and problem-solving techniques of engineering from design to manufacturing to the marketplace for any object. Mechanical engineers analyze their work using the principles of motion, energy, and force—ensuring that designs function safely, efficiently, and reliably, all at a competitive cost.
+
+			Mechanical engineers make a difference. That's because mechanical engineering careers center on creating technologies to meet human needs. Virtually every product or service in modern life has probably been touched in some way by a mechanical engineer to help humankind.
+
+			This includes solving today's problems and creating future solutions in health care, energy, transportation, world hunger, space exploration, climate change, and more.
+
+			Being ingrained in many challenges and innovations across many fields means a mechanical engineering education is versatile. To meet this broad demand, mechanical engineers may design a component, a machine, a system, or a process. This ranges from the macro to the micro, from the largest systems like cars and satellites to the smallest components like sensors and switches. Anything that needs to be manufactured—indeed, anything with moving parts—needs the expertise of a mechanical engineer</p>
+		</div>
+	</div>
+</div>
+<!-- mechanical end -->
+
+<!-- instru start -->
+<div class="container-fluid my-2" id="instru">
+	<div class="row justify-content-around align-middle">
+		<div class="col-md-12 text-center p-3 mt-5">
+			<h2>Instrumentation Engineering</h2>
+		</div>
+		<div class="col-md-8 text-center text-justify box p-3 my-5 rounded-3" data-aos="fade-down" data-aos-delay="400">
+			<p>Instrumentation is a pioneer field of engineering in the modern era. In this fast growing age of automation and process industries, instrumentation engineer is an inevitable choice of every industry.  So it is very essential and relevant in implementing a department which moulds young talents in the field of instrumentation. With that view we have started the Department of Electronics and Instrumentation Engineering in the year of 2002. The annual intake is 60.The department consists of highly qualified and eminent faculty members with immense knowledge and vast experience in teaching and industry. For the last eight years, the department has made several achievements in the field of technical education. It is proud to announce our students had achieved First and Second Ranks in the M G University examinations from 2006 to 2018 as a continuum. A large number of students from our department are placed in the national and multinational companies.
+
+			The department has well equipped laboratories such as "Transducers and Measurements Lab", "Instrumentation Lab", “Virtual Instrumentation Lab” and fully automated "Process Control Lab" which are essentially necessary for the students to excel in practical fields of instrumentation. It addition we have a dedicated Research Lab and Calibration Lab
+
+			An association named IDEA is working under the department of EIE. Various activities such as seminars, quiz competitions, group discussions, technical paper presentations and invited experts` talks are being carried out in this association.</p>
+		</div>
+	</div>
+</div>
+<!-- instru end -->
+<!-- contact-start -->
+<div class="contact container-fluid bg-secondary text-white" id="contact">
+	<div class="row justify-content-around p-5">
+		<div class="col-md-3 align-middle border-right" data-aos="fade-up" data-aos-delay="400">
+			<h4>&copy; Copyright held by Bhargav</h4>
+			<p>Contact no : 9021086157</p>
+			<p>Email-id:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" id="email" class="text-white text-decoration-none"> bhargavmonstergurav@gmail.com</a></p>
+		</div>
+		
+		<div class="col-md-3">
+			<form class="form" data-aos="fade-up" data-aos-delay="400">
+
+				<div class="form-group">
+					<input type="text" name="" class="form-control" placeholder="Name">
+				</div>
+
+				<div class="form-group">
+					<input type="email" name="" class="form-control" placeholder="Email-id">
+				</div>
+				<div class="form-group">
+					<textarea placeholder="Message" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-outline-light">Submit</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+<!-- contact-end -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="aos.js"></script>
+<script src="vanilla-tilt.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+	AOS.init();
+</script>
+</body>
+</html>
